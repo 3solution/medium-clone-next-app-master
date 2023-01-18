@@ -1,0 +1,11 @@
+.wrapper {
+  @apply border-t border-gray-200 bg-white absolute bottom-0 w-full;
+
+  .textWrapper {
+    @apply container pt-8 px-4 mx-auto tablet:flex tablet:items-center tablet:justify-between;
+
+    .text {
+      @apply mb-8 text-16 text-gray-500 tablet:order-1 tablet:mt-0;
+    }
+  }
+}

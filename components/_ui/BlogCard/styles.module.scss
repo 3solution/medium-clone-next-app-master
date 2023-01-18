@@ -1,0 +1,30 @@
+.wrapper {
+  @apply w-full rounded-xl overflow-hidden;
+
+  &:hover {
+    @apply cursor-pointer;
+
+    .imageWrapper .textWrapper {
+      @apply opacity-100;
+    }
+  }
+  .imageWrapper {
+    @apply relative h-250;
+
+    .image {
+      @apply object-cover w-full h-full;
+    }
+
+    .textWrapper {
+      @apply absolute bottom-0 w-full text-white opacity-80 transition-all;
+
+      .title {
+        @apply text-20 bg-blue-500 px-2 py-1 font-bold  rounded-tr-xl truncate w-full;
+      }
+
+      .description {
+        @apply text-16 font-semibold bg-purple-600 px-2 py-1 truncate;
+      }
+    }
+  }
+}

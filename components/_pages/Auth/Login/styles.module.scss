@@ -1,0 +1,22 @@
+.form {
+  @apply space-y-6;
+
+  .refWrapper {
+    @apply flex items-center justify-between;
+
+    .checkboxWrapper {
+      @apply flex items-center;
+    }
+  }
+
+  .linkWrapper {
+    @apply text-right space-y-2;
+  }
+  .link {
+    @apply text-indigo-600 hover:text-indigo-500 text-14;
+  }
+}
+
+.error {
+  @apply block text-12 text-red-500 text-left;
+}

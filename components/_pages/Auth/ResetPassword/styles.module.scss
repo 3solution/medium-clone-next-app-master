@@ -1,0 +1,11 @@
+.form {
+  @apply space-y-6;
+
+  .linkWrapper {
+    @apply text-right space-y-2;
+
+    .link {
+      @apply text-indigo-600 hover:text-indigo-500 text-14;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.image {
+  @apply object-cover w-full desktop:h-350 tablet:h-250 phone:h-200 h-132 relative;
+}
+.wrapper {
+  @apply container mx-auto;
+
+  .blogWrapper {
+    @apply max-w-screen-tablet mx-auto p-20 container;
+
+    .title {
+      @apply text-black text-30 font-normal mt-30;
+    }
+
+    .description {
+      @apply text-gray-700 text-20 font-light my-10;
+    }
+
+    .authorWrapper {
+      @apply flex mt-5 space-x-4 items-center mb-20;
+
+      .authorText {
+        @apply text-indigo-500;
+      }
+    }
+    .avatar {
+      @apply h-40 w-40 rounded-full;
+    }
+    .descriptionWrapper {
+      @apply mb-20;
+
+      .content {
+        @apply text-16 whitespace-pre-wrap;
+      }
+
+      .blogImage {
+        @apply w-full my-2;
+      }
+    }
+
+    .commentWrapper {
+      @apply border-2 border-gray-400 rounded-md p-10 space-y-20;
+
+      .commentAuthor {
+        @apply flex justify-start items-center mb-5;
+
+        .commentInfo {
+          @apply text-indigo-500 pl-10;
+        }
+      }
+
+      .commentText {
+        @apply px-1;
+      }
+    }
+
+    .line {
+      @apply max-w-lg mx-auto my-20 border border-indigo-500;
+    }
+
+    .addComment {
+      @apply opacity-100;
+    }
+  }
+}

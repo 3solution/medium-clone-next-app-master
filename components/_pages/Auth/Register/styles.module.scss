@@ -1,0 +1,19 @@
+.form {
+  @apply space-y-6;
+
+  .nameSet {
+    @apply grid tablet:grid-cols-2 grid-cols-1 tablet:gap-3 tablet:space-y-0 space-y-6;
+  }
+
+  .linkWrapper {
+    @apply text-right space-y-2;
+
+    .link {
+      @apply text-indigo-600 hover:text-indigo-500 text-14;
+    }
+  }
+}
+
+.error {
+  @apply block text-12 text-red-500 text-left;
+}
